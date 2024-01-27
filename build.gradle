@@ -4,12 +4,7 @@ plugins {
 }
 
 group = 'com.github.raphtikatghg'
-version = '1.0'
-
-java {
-    withJavadocJar()
-    withSourcesJar()
-}
+version = 'v2'
 
 repositories {
     mavenCentral()
@@ -19,6 +14,26 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            groupId = 'com.github.raphtikatghg'
+            artifactId = 'XCPU'
+            version = 'v2'
+        }
+    }
+
+    repositories {
+        maven {
+            name = "jitpack"
+            url = uri("https://jitpack.io")
+        }
+    }
+}
+
 
 test {
     useJUnitPlatform()
