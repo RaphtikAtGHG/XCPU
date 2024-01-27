@@ -1,0 +1,20 @@
+What we have:
+- Stack
+- Instructions
+- Memory
+- Interrupts
+
+What I am working on:
+- More Opcodes
+
+What we need:
+- Cache
+- No more memory modifying memory like monkeys
+- Organizing everything
+- Good comments
+- More interrupts
+
+What we maybe need:
+- JavaDoc
+- Good logging
+- Separate Window
