@@ -1,9 +1,12 @@
 plugins {
     id 'java'
+    id 'maven'
 }
 
-group = 'io.github.raphtikatghg'
+group = 'com.github.raphtikatghg'
 version = '1.0-SNAPSHOT'
+
+sourcesCompatibilty
 
 repositories {
     mavenCentral()
