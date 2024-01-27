@@ -1,12 +1,15 @@
 plugins {
     id 'java'
-    id 'maven'
+    id 'maven-publish'
 }
 
 group = 'com.github.raphtikatghg'
-version = '1.0-SNAPSHOT'
+version = '1.0'
 
-sourcesCompatibilty
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
 
 repositories {
     mavenCentral()
