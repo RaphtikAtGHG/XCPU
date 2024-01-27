@@ -4,10 +4,15 @@ plugins {
 }
 
 group = 'com.github.raphtikatghg'
-version = 'v2'
+version = 'V3.0'
 
 repositories {
     mavenCentral()
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
 }
 
 dependencies {
