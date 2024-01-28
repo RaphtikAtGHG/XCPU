@@ -35,6 +35,6 @@ public class Flags {
     }
 
     public String getFlags() {
-        return "ZA: " + ZeroA + " ZC: " + ZeroC + " ZE: " + ZeroE + " ZG: " + ZeroG;
+        return "ZA=" + ZeroA + " ZC=" + ZeroC + " ZE=" + ZeroE + " ZG=" + ZeroG;
     }
 }

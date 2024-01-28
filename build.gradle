@@ -27,7 +27,7 @@ publishing {
 
             groupId = 'com.github.raphtikatghg'
             artifactId = 'XCPU'
-            version = 'v2'
+            version = 'V3.0'
         }
     }
 
