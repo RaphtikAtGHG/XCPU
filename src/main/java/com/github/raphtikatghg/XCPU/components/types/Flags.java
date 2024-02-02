@@ -34,6 +34,10 @@ public class Flags {
         ZeroG = false;
     }
 
+    /**
+     * Return the flags in the set in the CPU
+     * @return The flags set in the CPU
+     */
     public String getFlags() {
         return "ZA=" + ZeroA + " ZC=" + ZeroC + " ZE=" + ZeroE + " ZG=" + ZeroG;
     }

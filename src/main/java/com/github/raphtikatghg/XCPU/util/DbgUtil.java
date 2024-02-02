@@ -26,4 +26,12 @@ public class DbgUtil {
         System.out.println("FLAGS: " + cpu.flags.getFlags());
     }
 
+
+    /**
+     * Method used to do some debugging like printing Registers
+     */
+    public DbgUtil() {
+
+    }
+
 }

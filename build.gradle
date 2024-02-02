@@ -20,26 +20,6 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-
-            groupId = 'com.github.raphtikatghg'
-            artifactId = 'XCPU'
-            version = 'V3.0'
-        }
-    }
-
-    repositories {
-        maven {
-            name = "jitpack"
-            url = uri("https://jitpack.io")
-        }
-    }
-}
-
-
 test {
     useJUnitPlatform()
 }

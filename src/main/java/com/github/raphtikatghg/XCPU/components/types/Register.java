@@ -13,6 +13,11 @@ public class Register {
      */
     private int value = 0x0000;
 
+    /**
+     * Register class. Very simple
+     * @author Raphtik@GHG
+     * @since V2.0
+     */
     public Register() {
 
     }

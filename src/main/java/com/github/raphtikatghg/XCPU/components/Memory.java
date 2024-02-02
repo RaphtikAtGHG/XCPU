@@ -4,6 +4,8 @@ package com.github.raphtikatghg.XCPU.components;
 import com.github.raphtikatghg.XCPU.exceptions.MemoryAccessViolation;
 import com.github.raphtikatghg.XCPU.exceptions.ReadOnlyMemoryException;
 
+import java.util.Arrays;
+
 /**
  * The memory class
  * @since V3.0
@@ -44,6 +46,7 @@ public class Memory {
      * Writes the value to the address
      * @param address The address to write to
      * @param value The value to write to the address
+     * @since V3.0
      */
     public void write(int address, int value) {
 
@@ -65,6 +68,7 @@ public class Memory {
      * Reads data from the address
      * @param address Address to read from
      * @return Data at address
+     * @since V3.0
      */
     public int read(int address) {
         return data[address];
@@ -72,8 +76,26 @@ public class Memory {
 
     /**
      * Makes the memory read-only
+     * @since V3.0
      */
     public void makeReadOnly() {
         RO = true;
+    }
+
+    /**
+     * Resets the memory completely
+     * @since V3.0
+     */
+    public void reset() {
+        Arrays.fill(data, 0x0000);
+        HasBeenWrittenTo = false;
+    }
+
+    /**
+     * Gets the data in the memory
+     * @return The data stored in memory
+     */
+    public int[] getData() {
+        return data;
     }
 }
